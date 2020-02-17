@@ -14,7 +14,6 @@ orderNow.addEventListener('click', ()=> {
         countNumb.innerHTML = `Potrebno je oznaciti kolicinu pice koju zelite naruciti!`;
     } else {
         countNumb.innerHTML = `Narucili ste ${countNumb.innerHTML} pica! ${date.getDate()}. ${date.getMonth()+1}. ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} `;
-        countNumb = 0;
-        countNumb.innerHTML = count;
+    
     }
 })
