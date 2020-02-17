@@ -9,9 +9,12 @@ btnOrder.addEventListener('click', ()=> {
 
 let orderNow = document.querySelector('#orderNowBtn');
 orderNow.addEventListener('click', ()=> {
-    countNumb.innerHTML = 0;
     let date = new Date();
-    if(countNumb.innerHTML == 0) {
+    if(count == 0) {
+        countNumb.innerHTML = `Potrebno je oznaciti kolicinu pice koju zelite naruciti!`;
+    } else {
         countNumb.innerHTML = `Narucili ste ${countNumb.innerHTML} pica! ${date.getDate()}. ${date.getMonth()+1}. ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} `;
+        countNumb = 0;
+        countNumb.innerHTML = count;
     }
 })
