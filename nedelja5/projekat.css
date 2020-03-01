@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #a7aabd;
+    height: 40vh;
+    color: #fff;
+}
+.top-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.p-prihod {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    background-color: #28b9b4;
+}
+
+.p-rashod {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    background-color: #ff514a;
+}
+
+.middle-div {
+    height: 10vh;
+    background-color: #f7f7f7;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    right: 23%;
+    transform: translateY(-50%);
+}
+
+#prihod h3 {
+    color: #28b9b4;
+    text-transform: uppercase;
+}
+
+#rashod h3 {
+    color: #ff514a;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}

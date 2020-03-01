@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="projekat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<header class="position-relative">
+    <div class="top-div">
+        <p>Dostupan budzet u Novembru</p>
+        <h2 id="budzetRez"></h2>
+        <p class="p-prihod">Prihod</p>
+        <p class="p-rashod">Rashod</p>
+    </div>
+</header>
+<div class="middle-div position-relative">
+    <form id="secondDiv">
+        <select name="" id="selectBox" style="height: 32px;">
+            <option disabled selected>Изабери</option>
+            <option value="rashod">Расходи</option>
+            <option value="prihod">Приходи</option>  
+        </select>
+        <input type="text" placeholder="Опис" id="desc">
+        <input type="number"  placeholder="Износ" id="sum">
+        <button id="button-add">ADD</button>
+    </form>
+</div>
+<div class="justify-content-around list-item-div d-flex">
+    <div id="prihod">
+        <h3>Приход</h3>
+        <ul id="prihodUl">
+            <hr>
+           <li></li>
+        </ul>
+    </div>
+    <div id="rashod">
+        <h3>Расход</h3> 
+        <ul id="rashodUl">
+            <hr>
+           
+        </ul>
+    </div>
+</div>
+    <!-- <div>
+        <div id="firstDiv">
+            <p>Доступан буџет у Новембру 2019</p>
+            <h2>+ 5892.99</h2>
+            <p class="">Приход +32,125.88</p>
+            <p class="">Расход -26351.67</p>
+        </div>
+    </div>
+    <form id="secondDiv">
+            <select name="" id="selectBox">
+                <option disabled  >Изабери</option>
+                <option value="">Приходи</option>
+                <option value="">Расходи</option>
+            </select>
+            <input type="text" placeholder="Опис" id="desc">
+            <input type="number"  placeholder="Износ" id="sum">
+            <button id="button-add">ADD</button>
+        </form>
+        <div id="thirdDiv" class="d-flex justify-content-around"> 
+            <div id="prihod">
+                <p>Приход</p><hr>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="rashod">
+                <p>Расход</p> <hr>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div> -->
+<script src="projekat.js"></script>
+</body>
+</html>
