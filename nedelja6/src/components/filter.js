@@ -1,13 +1,25 @@
+import { getPastLaunches } from '../services/spacex_services'
+import Launch from './launch';
 
-const Filter=(years)=> {
+
+const Filter=(year)=> {
     let div = document.createElement('div');
-    let select = document.createElement('select');
-    let option1 = document.createElement('option');
-    option1.innerHTML = '';
-    select.appendChild(option1);
+    
 
-    // years.forEach(element => {
-        
-    // });
+    getPastLaunches().then(res=> {
+        let {data} = res
+       
+
+        data.forEach(element=> {
+            if(year == element.launch_year) {
+                div.appendChild(Launch(element))
+            }
+            
+        })
+
+    })
+    return div
+
+
 } 
 export default Filter
