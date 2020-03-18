@@ -1,0 +1,17 @@
+input {
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgb(131, 128, 128);
+    padding: 10px 10px;
+    font-style: italic;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid gray;
+    color: black;
+    background-color: gray;
+}
+
